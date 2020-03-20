@@ -11,9 +11,9 @@ spring:
   application:
     name: microservicecloud-config-dept-client
   datasource:
-    url: jdbc:mysql://localhost:3306/cloudDB01?serverTimezone=GMT%2B8&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://192.168.198.131:3306/clouddb01?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
-    password: root
+    password: 123456zc
     driver-class-name: com.mysql.jdbc.Driver
     dbcp2:
       min-idle: 5
@@ -24,7 +24,7 @@ spring:
 #mybatis 包扫描
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.wc.springcloud.entities
+  type-aliases-package: com.atguigu.springcloud.entities
   mapper-locations:
     -classpath: mybatis/mapper/**/*.xml
 
@@ -37,8 +37,8 @@ eureka:
     prefer-ip-address: true
 
 info:
-  app.name: wc-microservicecloud
-  company.name:  www.baidu.com
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.vwrsion: $project.version$
 ---
@@ -50,9 +50,9 @@ spring:
   application:
     name: microservicecloud-config-dept-client
   datasource:
-    url: jdbc:mysql://localhost:3306/cloudDB02?serverTimezone=GMT%2B8&characterEncoding=utf8&useSSL=false #dev和test 连接的数据库不同
+    url: jdbc:mysql://192.168.198.131:3306/clouddb02?useUnicode=true&characterEncoding=utf8&useSSL=false #dev和test 连接的数据库不同
     username: root
-    password: root
+    password: 123456zc
     driver-class-name: com.mysql.jdbc.Driver
     dbcp2:
       min-idle: 5
@@ -63,7 +63,7 @@ spring:
 #mybatis 包扫描
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml
-  type-aliases-package: com.wc.springcloud.entities
+  type-aliases-package: com.atguigu.springcloud.entities
   mapper-locations:
     -classpath: mybatis/mapper/**/*.xml
 
@@ -75,13 +75,8 @@ eureka:
     instance-id: dept-8001.com
     prefer-ip-address: true
 
-  info.app.name= wc-microservicecloud
-  info.company.name= www.baidu.com
-  info.build.artifactId= $project.artifactId$
-  info.build.version= $project.version$
-
 info:
-  app.name: wc-microservicecloud
-  company.name:  www.baidu.com
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
   build.artifactId: $project.artifactId$
   build.vwrsion: $project.version$

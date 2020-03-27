@@ -11,7 +11,7 @@ spring:
   application:
     name: microservicecloud-config-dept-client
   datasource:
-    url: jdbc:mysql://192.168.198.132:3306/clouddb03?useUnicode=true&characterEncoding=utf8&useSSL=false
+    url: jdbc:mysql://192.168.198.133:3306/clouddb03?useUnicode=true&characterEncoding=utf8&useSSL=false
     username: root
     password: 123456zc
     driver-class-name: com.mysql.jdbc.Driver
@@ -50,7 +50,7 @@ spring:
   application:
     name: microservicecloud-config-dept-client
   datasource:
-    url: jdbc:mysql://192.168.198.132:3306/clouddb02?useUnicode=true&characterEncoding=utf8&useSSL=false #dev和test 连接的数据库不同
+    url: jdbc:mysql://192.168.198.133:3306/clouddb02?useUnicode=true&characterEncoding=utf8&useSSL=false #dev和test 连接的数据库不同
     username: root
     password: 123456zc
     driver-class-name: com.mysql.jdbc.Driver
